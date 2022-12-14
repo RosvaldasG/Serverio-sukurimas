@@ -1,11 +1,11 @@
-const express = require("express");
+import express from "express";
 
 const app = express();
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const db = require("./db");
-
-require("dotenv").config();
+import cors from "cors";
+import bodyParser from "body-parser";
+import db from "./db.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 app.use(cors());
 

@@ -1,4 +1,5 @@
-const { Pool } = require("pg");
+import pkg from "pg";
+const { Pool } = pkg;
 
 const connectionString =
   "postgres://bkjtijhn:S0CHWyOMjpA8ZyNDoBmjtQyJu4rrryi9@mouse.db.elephantsql.com/bkjtijhn";
@@ -7,4 +8,4 @@ const pool = new Pool({
   connectionString,
 });
 
-module.exports = pool;
+export default pool;
